@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "30585c04-4132-4e28-be99-c7bf10022275",
+		"name": "hw_postman2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "first responce",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"This is the first responce from server!\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/first",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { //проверить статус код 200\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json(); // спарсить response bode в json\r",
+							"\r",
+							"pm.test(\"testName\", function () { // Проверить, что name в ответе равно name s request\r",
+							"    pm.expect(jsonData.name).to.eql(\"Jorni\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"testAge\", function () { // Проверить, что age в ответе равно age s request\r",
+							"    pm.expect(jsonData.age).to.eql(\"27\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"testSalary\", function () { // Проверить, что salary в ответе равно salary s request\r",
+							"    pm.expect(jsonData.salary).to.eql(2000);\r",
+							"});\r",
+							"\r",
+							"let req =request.data; // Спарсить request.\r",
+							"// console.log(\"req = \", req ); \r",
+							"// console.log(\"typofReq = \", typeof req);\r",
+							"\r",
+							"pm.test(\"checkName\", function () { // Проверить, что name в ответе равно name s request\r",
+							"    pm.expect(req.name).to.eql(jsonData.name);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"checkAge\", function () { // Проверить, что age в ответе равно age s request\r",
+							"    pm.expect(req.age).to.eql(jsonData.age);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"checkSalary\", function () { // Проверить, что salary в ответе равно salary s request\r",
+							"    pm.expect(Number(req.salary)).to.equal(jsonData.salary);\r",
+							"});\r",
+							"\r",
+							"console.log(jsonData.family) // Вывести в консоль параметр family из response.\r",
+							"\r",
+							"//Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)\r",
+							"let req_salary_1_5 = req.salary*4\r",
+							"console.log(req_salary_1_5)\r",
+							"\r",
+							"pm.test(\"check_Salary_1_5_year\", function () { \r",
+							"    pm.expect(req_salary_1_5).to.equal(jsonData.family.u_salary_1_5_year);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"type": "default"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"/s34lfgbj/Jorni/jjd909/86482kjkWpqc11801234qwer295478evny\"",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"disabled": true
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Jorni/jjd909/92933kjkWpqc23451234qwer120evny",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Jorni",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234qwer",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/login",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
