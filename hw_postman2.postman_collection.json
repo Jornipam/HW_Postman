@@ -107,17 +107,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "{{name}}",
+							"value": "Jorni",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}",
+							"value": "27",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}",
+							"value": "2000",
 							"type": "default"
 						},
 						{
