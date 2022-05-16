@@ -103,17 +103,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Jorni",
+							"value": "{{name}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "27",
+							"value": "{{age}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "2000",
+							"value": "{{salary}}",
 							"type": "default"
 						},
 						{
@@ -281,7 +281,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}:{{port}}/object_info_3?name=Jorni&age=27&salary=2000",
+					"raw": "{{url}}:{{port}}/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
 					"host": [
 						"{{url}}"
 					],
@@ -292,15 +292,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Jorni"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "27"
+							"value": "{{age}}"
 						},
 						{
 							"key": "salary",
-							"value": "2000"
+							"value": "{{salary}}"
 						}
 					]
 				}
