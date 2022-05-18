@@ -1,0 +1,30 @@
+name,age,salary
+Ann,18,1
+Anna,19,2
+Ololosha Olololololololololololololoeva,119,999999
+*Ololosha№Olololololololololololololoeva,120,1000000
+Анна$, 22 , 10 
+Киця,2 2,1 1
+,18,1
+   ,18,1
+Anna,,1
+Anna,   ,1
+Anna,18,
+Anna,18,   
+An,18,1
+Ololosha Ololololololololololololololoeva,18,1
+ Anna,18,1
+Anna ,18,1
+Anna,twenty,1
+Anna,17,1
+Anna,121,1
+Anna,   ,1
+anna,0,1
+anna,020,1
+anna,20.1,1
+anna,20%,1
+lola,60,0
+lola,60,1000001
+lola,60,-22
+lola,60,twenty
+lola,60,    
