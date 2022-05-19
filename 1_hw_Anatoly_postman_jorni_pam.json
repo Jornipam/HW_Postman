@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "995e6d96-c9fa-4e51-98a6-5d136fd9e8a1",
+		"name": "1*_hw_Anatoly_postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "проверка на валидные данные",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let req =request.data;\r",
+							"console.log(typeof req, req)\r",
+							"\r",
+							"let name = req.name\r",
+							"let age = req.age\r",
+							"let salary = req.salary\r",
+							"\r",
+							"// name.trim() !== \"\" && name.startsWith(' ') !== true && name.endsWith(' ') !== true\r",
+							"const chackName = function (name) {\r",
+							"    if (name && name.length >= 3 && name.length <= 40 && name.trim() == name ){\r",
+							"        pm.test(\"name Status code is 200\", function () {\r",
+							"        pm.response.to.have.status(200); \r",
+							"        });\r",
+							"    }\r",
+							"    else {\r",
+							"     pm.test(\"name Status code is NOT 200\", function () {\r",
+							"     pm.response.to.not.have.status(200); \r",
+							"     });\r",
+							"    }\r",
+							"}\r",
+							"chackName (name)\r",
+							"\r",
+							"const chackAge = function(age) {\r",
+							"    if (age && age >= 18 && age <= 120 && Number.isInteger(Number(age)) == true){\r",
+							"        pm.test(\" age Status code is 200\", function () {\r",
+							"        pm.response.to.have.status(200); \r",
+							"        });\r",
+							"    }\r",
+							"    else {\r",
+							"     pm.test(\"age Status code is NOT 200\", function () {\r",
+							"     pm.response.to.not.have.status(200); \r",
+							"     });\r",
+							"    }\r",
+							"} \r",
+							"chackAge (age)\r",
+							" \r",
+							"const chackSalary = function(salary) {\r",
+							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(Number(salary)) == true){\r",
+							"     pm.test(\" salary Status code is 200\", function () {\r",
+							"     pm.response.to.have.status(200); \r",
+							"     });\r",
+							"    }\r",
+							"    else {\r",
+							"     pm.test(\"salary Status code is NOT 200\", function () {\r",
+							"     pm.response.to.not.have.status(200); \r",
+							"     });\r",
+							"    }\r",
+							"}\r",
+							"chackSalary (salary);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/user_info_2",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "дубликат проверки",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let req =request.data;\r",
+							"console.log(typeof req, req)\r",
+							"\r",
+							"let name = req.name\r",
+							"let age = req.age\r",
+							"let salary = req.salary\r",
+							"\r",
+							"// name.trim() !== \"\" && name.startsWith(' ') !== true && name.endsWith(' ') !== true\r",
+							"function chackName(name) {\r",
+							"    if (name && name.length >= 3 && name.length <= 40 && name.trim() == name ){\r",
+							"        return true\r",
+							"    }\r",
+							"}\r",
+							"chackName (name)\r",
+							"\r",
+							"function chackAge(age) {\r",
+							"    if (age && age >= 18 && age <= 120 && Number.isInteger(Number(age)) == true){\r",
+							"        return true\r",
+							"    }\r",
+							"} \r",
+							"chackAge (age)\r",
+							" \r",
+							"function chackSalary(salary) {\r",
+							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(Number(salary)) == true){\r",
+							"     return true\r",
+							"    }\r",
+							"}\r",
+							"chackSalary (salary);\r",
+							"if (chackName == true && chackAge == true && chackSalary == true ) {\r",
+							"    pm.test(\"Status code is 200\", function () {\r",
+							"     pm.response.to.have.status(200); \r",
+							"     });\r",
+							"    }\r",
+							"    else {\r",
+							"     pm.test(\"Status code is NOT 200\", function () {\r",
+							"     pm.response.to.not.have.status(200); \r",
+							"     });\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Lola",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "18",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}:{{port}}/user_info_2",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
