@@ -165,8 +165,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -216,8 +216,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -267,8 +267,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -318,8 +318,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -369,8 +369,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -420,8 +420,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -471,8 +471,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -522,8 +522,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -573,8 +573,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -624,8 +624,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -675,8 +675,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -726,8 +726,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -777,8 +777,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -828,8 +828,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -879,8 +879,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -930,8 +930,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -981,8 +981,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1032,8 +1032,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1083,8 +1083,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1139,8 +1139,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1184,14 +1184,14 @@
 			"response": []
 		},
 		{
-			"name": "негативн,salary символами",
+			"name": "негативн,salary буквами",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1241,8 +1241,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is NOT 200\", function () {\r",
+							"    pm.response.to.not.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript"
