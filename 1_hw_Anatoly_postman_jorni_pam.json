@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "проверка на валидные данные",
+			"name": "три запроса \\проверка на валидные данные",
 			"event": [
 				{
 					"listen": "test",
@@ -16,8 +16,8 @@
 							"console.log(typeof req, req)\r",
 							"\r",
 							"let name = req.name\r",
-							"let age = req.age\r",
-							"let salary = req.salary\r",
+							"let age = +req.age\r",
+							"let salary = +req.salary\r",
 							"\r",
 							"// name.trim() !== \"\" && name.startsWith(' ') !== true && name.endsWith(' ') !== true\r",
 							"const chackName = function (name) {\r",
@@ -35,7 +35,7 @@
 							"chackName (name)\r",
 							"\r",
 							"const chackAge = function(age) {\r",
-							"    if (age && age >= 18 && age <= 120 && Number.isInteger(Number(age)) == true){\r",
+							"    if (age && age >= 18 && age <= 120 && Number.isInteger(age) == true){\r",
 							"        pm.test(\" age Status code is 200\", function () {\r",
 							"        pm.response.to.have.status(200); \r",
 							"        });\r",
@@ -49,7 +49,7 @@
 							"chackAge (age)\r",
 							" \r",
 							"const chackSalary = function(salary) {\r",
-							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(Number(salary)) == true){\r",
+							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(salary) == true){\r",
 							"     pm.test(\" salary Status code is 200\", function () {\r",
 							"     pm.response.to.have.status(200); \r",
 							"     });\r",
@@ -103,7 +103,7 @@
 			"response": []
 		},
 		{
-			"name": "дубликат проверки",
+			"name": "один запрос\\ проверка на валидные данные",
 			"event": [
 				{
 					"listen": "test",
@@ -113,10 +113,9 @@
 							"console.log(typeof req, req)\r",
 							"\r",
 							"let name = req.name\r",
-							"let age = req.age\r",
-							"let salary = req.salary\r",
+							"let age = +req.age\r",
+							"let salary = +req.salary\r",
 							"\r",
-							"// name.trim() !== \"\" && name.startsWith(' ') !== true && name.endsWith(' ') !== true\r",
 							"function chackName(name) {\r",
 							"    if (name && name.length >= 3 && name.length <= 40 && name.trim() == name ){\r",
 							"        return true\r",
@@ -125,19 +124,19 @@
 							"chackName (name)\r",
 							"\r",
 							"function chackAge(age) {\r",
-							"    if (age && age >= 18 && age <= 120 && Number.isInteger(Number(age)) == true){\r",
+							"    if (age && age >= 18 && age <= 120 && Number.isInteger(age)== true){\r",
 							"        return true\r",
 							"    }\r",
 							"} \r",
 							"chackAge (age)\r",
 							" \r",
 							"function chackSalary(salary) {\r",
-							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(Number(salary)) == true){\r",
+							" if (salary && salary >= 1 && salary <= 1000000 && Number.isInteger(salary)== true){\r",
 							"     return true\r",
 							"    }\r",
 							"}\r",
 							"chackSalary (salary);\r",
-							"if (chackName == true && chackAge == true && chackSalary == true ) {\r",
+							"if (chackName(name) == true && chackAge(age) == true && chackSalary(salary) == true ) {\r",
 							"    pm.test(\"Status code is 200\", function () {\r",
 							"     pm.response.to.have.status(200); \r",
 							"     });\r",
@@ -160,17 +159,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Lola",
+							"value": "{{name}}",
 							"type": "default"
 						},
 						{
 							"key": "age",
-							"value": "18",
+							"value": "{{age}}",
 							"type": "default"
 						},
 						{
 							"key": "salary",
-							"value": "1",
+							"value": "{{salary}}",
 							"type": "default"
 						}
 					]
