@@ -5,21 +5,21 @@
 ## HW1 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью первого задания было создать запросы в Postman на различные endpoint'ы сервера и получить от каждогоо определенный ответ.
 
-[Решение]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman_jorni_pam.json")
+Решение: [hw_postman1_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman_jorni_pam.json")
 
 
 ---
 ## HW2 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью второго задания было изучить применение сниппетов, создание окружения, парсинг запросов и ответов, построение тестов на основе полученных данных.
 
-[Решение]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman2_jorni_pam.json")
+Решение: [hw_postman2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman2_jorni_pam.json")
 
 ---
 ## HW2 by [Anatoly Karpovich]("https://www.linkedin.com/in/anatolykarpovich/")
 
 Целью **первой части** этого задания было провести тестирование API данного enpoint'а на валидацию входных параметров.
 
- [Решение]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_Anatoly1.1_jorni_pam.json") + [окружение]("https://github.com/Jornipam/HW_Postman/blob/main/environment%20hw2_postman_Anatoly2_jorni_pam.json")
+Решение: [hw2_postman_Anatoly1.1_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_Anatoly1.1_jorni_pam.json") + [environment hw2_postman_Anatoly2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/environment%20hw2_postman_Anatoly2_jorni_pam.json")
 
 
 Условия: 
@@ -41,7 +41,7 @@ P.S. ЗАДАНИЕ НЕ ПОДРАЗУМЕВАЕТ, ЧТО ЭНДПОИНТ Р�
 2. в коллекции был только 1 запрос, который будет повторяться столько раз, сколько строк в CSV файле. 
 3. была написана функция в тестах, которая проверяет валидность входящих данных, и в зависимости от этого проверяет на статус 200 или НЕ 200.
 
- [решение]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_Anatoly2_jorni_pam.json") + [окружение]("https://github.com/Jornipam/HW_Postman/blob/main/environment%20hw2_postman_Anatoly2_jorni_pam.json") + [параметры]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_anatoly2_data.csv")
+ Решение: [hw2_postman_Anatoly2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_Anatoly2_jorni_pam.json") + [environment hw2_postman_Anatoly2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/environment%20hw2_postman_Anatoly2_jorni_pam.json") + [hw2_postman_anatoly2_data.csv]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_anatoly2_data.csv")
 
 Так же во **второй части** было проеобразование заданий из HW2 by Vadim Ksendzov.
 
