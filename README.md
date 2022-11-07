@@ -3,7 +3,7 @@
 
 ---
 ## HW1 by [Vadim Ksendzov]("https://ksendzov.com/")
-Целью первого задания было создать запросы в Postman на различные endpoint'ы сервера и получить от каждогоо определенный ответ.
+Целью первого задания было создать запросы в Postman на различные endpoint'ы сервера и получить от каждого определенный ответ.
 
 Решение: [hw_postman1_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman_jorni_pam.json")
 
