@@ -4,14 +4,11 @@
 
 Решение: [hw_postman1_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman_jorni_pam.json")
 
-
----
 ## Task №2 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью второго задания было изучить применение сниппетов, создание окружения, парсинг запросов и ответов, построение тестов на основе полученных данных.
 
 Решение: [hw_postman2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman2_jorni_pam.json")
 
----
 ## Task by [Anatoly Karpovich]("https://www.linkedin.com/in/anatolykarpovich/")
 
 Целью **первой части** этого задания было провести тестирование API данного enpoint'а на валидацию входных параметров.
