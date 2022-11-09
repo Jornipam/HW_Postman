@@ -1,6 +1,4 @@
 # Postman
-
-
 ---
 ## Task №1 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью первого задания было создать запросы в Postman на различные endpoint'ы сервера и получить от каждого определенный ответ.
