@@ -1,21 +1,21 @@
-# HW_Postman
-Этот репозиторий предназначен для демонстрации навыков, полученных в процессе изучения программы Postman.
+# Postman
+
 
 ---
-## HW1 by [Vadim Ksendzov]("https://ksendzov.com/")
+## Task №1 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью первого задания было создать запросы в Postman на различные endpoint'ы сервера и получить от каждого определенный ответ.
 
 Решение: [hw_postman1_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman_jorni_pam.json")
 
 
 ---
-## HW2 by [Vadim Ksendzov]("https://ksendzov.com/")
+## Task №2 by [Vadim Ksendzov]("https://ksendzov.com/")
 Целью второго задания было изучить применение сниппетов, создание окружения, парсинг запросов и ответов, построение тестов на основе полученных данных.
 
 Решение: [hw_postman2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw_postman2_jorni_pam.json")
 
 ---
-## HW2 by [Anatoly Karpovich]("https://www.linkedin.com/in/anatolykarpovich/")
+## Task by [Anatoly Karpovich]("https://www.linkedin.com/in/anatolykarpovich/")
 
 Целью **первой части** этого задания было провести тестирование API данного enpoint'а на валидацию входных параметров.
 
@@ -33,8 +33,6 @@
 1. Name: 3-40 символов включительно, запрещены префиксные и постфиксные пробелы. Поле обязательное
 2. Age: только целые цифры в диапазоне 18-120 включительно. Поле обязательное
 3. Salary: только целые цифры в диапазоне 1-1000000 включительно. Поле обязательное
-
-P.S. ЗАДАНИЕ НЕ ПОДРАЗУМЕВАЕТ, ЧТО ЭНДПОИНТ РАБОТАЕТ СОГЛАСНО НАПИСАННЫМ ТРЕБОВАНИЯМ. МЫ УЧИМСЯ ПИСАТЬ ТЕСТЫ НА API!
 
 Целью **второй части** этого задания было  преобразовать часть 1 таким образом, чтобы:
 1. параметры забираись из CSV файла. 
@@ -80,12 +78,10 @@ if (chackName(name) && chackAge(age) && chackSalary(salary)) {
      pm.response.to.not.have.status(200); 
      });
 }
-
 ```
-
  Решение: [hw2_postman_Anatoly2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_Anatoly2_jorni_pam.json") + [environment hw2_postman_Anatoly2_jorni_pam.json]("https://github.com/Jornipam/HW_Postman/blob/main/environment%20hw2_postman_Anatoly2_jorni_pam.json") + [hw2_postman_anatoly2_data.csv]("https://github.com/Jornipam/HW_Postman/blob/main/hw2_postman_anatoly2_data.csv")
 
-Так же во **второй части** было проеобразование заданий из HW2 by Vadim Ksendzov.
+Так же во **второй части** было проеобразование заданий из Task №2 by Vadim Ksendzov.
 
 Задание 2* :
 
