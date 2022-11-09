@@ -115,6 +115,6 @@ let resp_salary = +pm.response.json().salary
 const obj_resp = {name: resp_name, age: req_age, salary: resp_salary} // помещаем спарсенные данные респонза в объект {ключ: значение}
 
 pm.test(`request == response`,function(){
-    pm.expect(obj_req.key).to.deep.equal(obj_resp.key) // глубокое сравнение обьектов по ключу
+    pm.expect(obj_req.key).to.deep.equal(obj_resp.key) // глубокое сравнение объектов по ключу
 })
 ```
